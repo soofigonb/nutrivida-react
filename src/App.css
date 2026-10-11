@@ -709,7 +709,118 @@
 }
 
 /* ========================================
-   10. DISEÑO RESPONSIVE
+   10. SECCIÓN CONTACTO
+   ======================================== */
+
+/* Fondo y espaciado */
+
+.contacto-seccion {
+  padding: 80px 24px;
+  background-color: #f0fdf4;
+}
+
+/* Descripción de la clínica */
+
+.contacto-descripcion {
+  margin-bottom: 24px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+/* Dirección, teléfono y correo */
+
+.contacto-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacto-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.contacto-lista i {
+  flex-shrink: 0;
+  color: #047857;
+  font-size: 1.2rem;
+}
+
+.contacto-lista a {
+  color: #047857;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.contacto-lista a:hover,
+.contacto-lista a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Contenedor del formulario */
+
+.contacto-formulario {
+  padding: 32px;
+  border: 1px solid #d8c4b8;
+  border-radius: 16px;
+  background-color: white;
+}
+
+/* Etiquetas y campos */
+
+.contacto-formulario .form-label {
+  color: #2f241f;
+  font-weight: 600;
+}
+
+.contacto-formulario .form-control {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.contacto-formulario .form-control:focus {
+  border-color: #047857;
+  box-shadow: 0 0 0 0.2rem rgba(4, 120, 87, 0.15);
+}
+
+/* Campos inválidos */
+
+.contacto-formulario .form-control.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+/* Área del mensaje */
+
+.contacto-formulario textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Botón para enviar */
+
+.contacto-boton {
+  padding: 12px 24px;
+  border-color: #047857;
+  border-radius: 8px;
+  background-color: #047857;
+  font-weight: 600;
+}
+
+.contacto-boton:hover,
+.contacto-boton:focus-visible {
+  border-color: #036548;
+  background-color: #036548;
+}
+
+/* ========================================
+   11. DISEÑO RESPONSIVE
    ======================================== */
 
 /* Tablets y pantallas menores a 992px */
@@ -801,5 +912,19 @@
 
   .blog-detalle-consejo {
     padding: 18px;
+  }
+
+    /* Contacto */
+
+  .contacto-seccion {
+    padding: 48px 12px;
+  }
+
+  .contacto-formulario {
+    padding: 20px;
+  }
+
+  .contacto-boton {
+    width: 100%;
   }
 }

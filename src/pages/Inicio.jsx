@@ -3,6 +3,7 @@ import Nosotros from '../components/Nosotros.jsx'
 import ListaNutricionistas from '../components/ListaNutricionistas.jsx'
 import PlanesServicios from '../components/PlanesServicios.jsx'
 import ListaBlogs from '../components/ListaBlogs.jsx'
+import FormularioContacto from '../components/FormularioContacto.jsx'
 
 function Inicio() {
   return (
@@ -12,6 +13,7 @@ function Inicio() {
       <ListaNutricionistas />
       <PlanesServicios />
       <ListaBlogs />
+      <FormularioContacto />
     </main>
   )
 }
