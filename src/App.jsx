@@ -1,6 +1,8 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Inicio from './pages/Inicio.jsx'
+import BlogDetalle1 from './pages/BlogDetalle1.jsx'
+import BlogDetalle2 from './pages/BlogDetalle2.jsx'
 import './App.css'
 
 function PaginaPendiente({ titulo }) {
@@ -27,6 +29,16 @@ function App() {
         <Route
           path="/agendar"
           element={<PaginaPendiente titulo="Agendar una cita" />}
+        />
+
+        <Route
+          path="/blogs/alimentacion-antiinflamatoria"
+          element={<BlogDetalle1 />}
+        />
+
+        <Route
+          path="/blogs/hidratacion-deportiva"
+          element={<BlogDetalle2 />}
         />
 
         <Route
