@@ -820,7 +820,91 @@
 }
 
 /* ========================================
-   11. DISEÑO RESPONSIVE
+   11. PIE DE PÁGINA — FOOTER
+   ======================================== */
+
+/* Fondo y espaciado */
+
+.footer-nutrivida {
+  padding: 32px 24px;
+  color: white;
+  background-color: #0f766e;
+  text-align: center;
+}
+
+/* Distribución de las redes sociales */
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+/* Enlaces e iconos de las redes */
+
+.footer-redes a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.footer-redes a:hover {
+  color: #0f766e;
+  background-color: #d1fae5;
+}
+
+/* Texto de derechos reservados */
+
+.footer-derechos {
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* Dirección, teléfono y correo */
+
+.footer-datos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.footer-datos a {
+  color: white;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.footer-datos a:hover {
+  text-decoration: underline;
+}
+
+/* Indicador de foco al navegar con el teclado */
+
+.footer-nutrivida a:focus-visible {
+  outline: 3px solid #fde68a;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   12. DISEÑO RESPONSIVE
    ======================================== */
 
 /* Tablets y pantallas menores a 992px */
@@ -926,5 +1010,16 @@
 
   .contacto-boton {
     width: 100%;
+  }
+
+    /* Footer */
+
+  .footer-nutrivida {
+    padding: 28px 12px;
+  }
+
+  .footer-datos {
+    flex-direction: column;
+    align-items: center;
   }
 }

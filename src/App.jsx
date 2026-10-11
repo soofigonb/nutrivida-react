@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import Inicio from './pages/Inicio.jsx'
 import BlogDetalle1 from './pages/BlogDetalle1.jsx'
 import BlogDetalle2 from './pages/BlogDetalle2.jsx'
+import Footer from './components/Footer.jsx'
 import './App.css'
 
 function PaginaPendiente({ titulo }) {
@@ -60,7 +61,10 @@ function App() {
           path="*"
           element={<PaginaPendiente titulo="Página no encontrada" />}
         />
+
       </Routes>
+      <Footer />
+
     </BrowserRouter>
   )
 }
