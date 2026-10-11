@@ -1,12 +1,22 @@
+/* ========================================
+   1. BARRA DE NAVEGACIÓN
+   ======================================== */
+
+/* Contenedor del menú */
+
 .navbar-nutrivida {
   background-color: #0f766e;
   padding: 0.75rem 1rem;
 }
 
+/* Nombre de la clínica */
+
 .navbar-nutrivida .navbar-brand {
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+/* Enlaces del menú */
 
 .navbar-nutrivida .nav-link {
   color: #fff;
@@ -17,11 +27,62 @@
   color: #fde68a;
 }
 
-/* Portada de NutriVida */
+/* ========================================
+   2. PÁGINA DE INICIO
+   ======================================== */
 
 .inicio-main {
   width: 100%;
 }
+
+/* ========================================
+   3. ENCABEZADOS COMPARTIDOS
+   ======================================== */
+
+/* Contenedor del encabezado */
+
+.seccion-encabezado {
+  max-width: 680px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* Texto pequeño sobre el título */
+
+.seccion-etiqueta {
+  margin-bottom: 8px;
+  color: #047857;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Título de la sección */
+
+.seccion-titulo {
+  margin-bottom: 12px;
+  color: #2f241f;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  font-weight: 600;
+}
+
+/* Descripción de la sección */
+
+.seccion-descripcion {
+  margin-bottom: 0;
+  color: #6b7280;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+/* ========================================
+   4. PORTADA — HERO
+   ======================================== */
+
+/* Fondo y contenedor */
 
 .inicio-hero {
   padding: 72px 24px;
@@ -31,6 +92,8 @@
 .inicio-hero-contenido {
   max-width: 580px;
 }
+
+/* Textos de la portada */
 
 .inicio-etiqueta {
   margin-bottom: 8px;
@@ -59,12 +122,16 @@
   line-height: 1.8;
 }
 
+/* Distribución de los botones */
+
 .inicio-acciones {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
 }
+
+/* Estilos compartidos de los botones */
 
 .inicio-boton-principal,
 .inicio-boton-secundario {
@@ -81,15 +148,21 @@
     transform 0.2s ease;
 }
 
+/* Botón: Ver nutricionistas */
+
 .inicio-boton-principal {
   color: white;
   background-color: #047857;
 }
 
+/* Botón: Agendar una cita */
+
 .inicio-boton-secundario {
   color: #047857;
   background-color: transparent;
 }
+
+/* Efecto al pasar el cursor */
 
 .inicio-boton-principal:hover,
 .inicio-boton-secundario:hover {
@@ -97,6 +170,8 @@
   background-color: #036548;
   transform: translateY(-2px);
 }
+
+/* Imagen de la portada */
 
 .inicio-hero-imagen img {
   display: block;
@@ -107,12 +182,91 @@
   box-shadow: 0 16px 35px rgba(47, 36, 31, 0.15);
 }
 
+/* ========================================
+   5. SECCIÓN NOSOTROS
+   ======================================== */
+
+/* Fondo y espaciado */
+
+.nosotros-seccion {
+  padding: 80px 24px;
+  background-color: #fffaf4;
+}
+
+/* Tarjetas informativas */
+
+.nosotros-tarjeta {
+  height: 100%;
+  padding: 28px;
+  border: 1px solid #d8c4b8;
+  border-radius: 14px;
+  background-color: white;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.nosotros-tarjeta:hover {
+  border-color: #047857;
+  transform: translateY(-3px);
+}
+
+/* Iconos de las tarjetas */
+
+.nosotros-icono {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #047857;
+  background-color: #d1fae5;
+  font-size: 1.3rem;
+}
+
+/* Títulos de las tarjetas */
+
+.nosotros-tarjeta h3 {
+  margin-bottom: 12px;
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+}
+
+/* Párrafos y lista de áreas de atención */
+
+.nosotros-tarjeta p,
+.nosotros-lista {
+  margin-bottom: 0;
+  color: #6b7280;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+.nosotros-lista {
+  padding-left: 20px;
+}
+
+/* ========================================
+   6. DISEÑO RESPONSIVE — CELULARES
+   Pantallas de hasta 575.98px
+   ======================================== */
+
 @media (max-width: 575.98px) {
+  /* Portada */
+
   .inicio-hero {
     padding: 40px 12px;
   }
 
   .inicio-hero-imagen img {
     height: 280px;
+  }
+
+  /* Nosotros */
+
+  .nosotros-seccion {
+    padding: 48px 12px;
   }
 }
